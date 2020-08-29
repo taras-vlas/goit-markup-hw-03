@@ -27,7 +27,8 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.m
   Ctrl + Shift + A або "клік" верхнього вікна у GIThub Desktop
   Ctrl + Shift + G
 
-Создан репозиторий goit-markup-hw-03.
+            Создан репозиторий goit-markup-hw-03.
+         !  Нужно выбрать root.
 
 decoration a {
 /_ margin-top: 0;
