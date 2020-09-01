@@ -23,35 +23,36 @@
     <div class="container">
       <header>
         <!-- site-nav - Главная навигация -->
-        <nav class="parents-btn">
+        <nav>
           <!-- logo Логотип, всегда ссылка -->
           <a href="./" lang="en" class="logo"
-            >Web<span class="logo-black">Studio</span>
-          </a>
+            >Web<span class="logo-black">Studio</span></a
+          >
           <!-- site-nav - Ссылки на другие страницы или разделы текущей -->
-          <ul class="site-nav list middle-topline">
+          <ul class="list site-nav">
             <li class="li-site-nav">
-              <a href="./index.html" class="link current">Студия</a>
-            </li>
-            <li class="li-site-nav">
-              <a href="./html/portfolio.html" class="link">Портфолио</a>
+              <a class="link current" href="./index.html">Студия</a>
             </li>
             <li class="li-site-nav">
-              <a href="./" class="link">Контакты</a>
+              <a class="link" href="./html/portfolio.html">Портфолио</a>
             </li>
-          </ul>
-          <!-- aus-nav, Contats -->
-          <ul class="aus-nav list edge-topline">
-            <li class="li-aus-nav">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="li-aus-nav">
-              <a href="tel:+380961111111" class="link">+38 (096) 111-11-11</a>
+            <li class="li-site-nav">
+              <a class="link" href="./">Контакты</a>
             </li>
           </ul>
         </nav>
+
+        <!-- aus-nav, Contats -->
+        <ul class="list aus-nav">
+          <li class="li-aus-nav">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="li-aus-nav">
+            <a class="link" href="tel:+380961111111">+38 (096) 111-11-11</a>
+          </li>
+        </ul>
       </header>
     </div>
 
@@ -69,8 +70,9 @@
         <a href="" class="button">Заказать услугу</a>
       </section>
       <!-- section advantage  - Секция преимуществ -->
-      <div class="container">
-        <section class="advntg">
+
+      <section class="advntg">
+        <div class="container">
           <ul class="list ul-advantage">
             <li class="li-advantage">
               <h3 class="advantage-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -101,11 +103,13 @@
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!-- section work -->
-      <div class="container">
-        <section class="section-work">
+
+      <section class="section-work">
+        <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list lu-work">
             <li class="li-work img">
@@ -130,8 +134,8 @@
               />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- section staff -->
       <section class="section-staff">
@@ -145,8 +149,10 @@
                 alt="Фотография Игоря Демяненко Product Designer."
                 width="270"
               />
-              <h3 class="staff-title">Игорь Демяненко</h3>
-              <h4>Product Designer</h4>
+              <div class="staff-pr max-width">
+                <h3 class="staff-title">Игорь Демяненко</h3>
+                <p class="staff-p">Product Designer</p>
+              </div>
             </li>
             <li class="li-staff outline-staff img">
               <img
@@ -154,8 +160,10 @@
                 alt="Фотография Ольги Репиной Frontend Developer."
                 width="270"
               />
-              <h3 class="staff-title">Ольга Репина</h3>
-              <h4>Frontend Developer</h4>
+              <div class="staff-pr max-width">
+                <h3 class="staff-title">Ольга Репина</h3>
+                <p class="staff-p">Frontend Developer</p>
+              </div>
             </li>
             <li class="li-staff outline-staff img">
               <img
@@ -163,8 +171,10 @@
                 alt="Фотография Николая Тарасова Marketing."
                 width="270"
               />
-              <h3 class="staff-title">Николай Тарасов</h3>
-              <h4>Marketing</h4>
+              <div class="staff-pr max-width">
+                <h3 class="staff-title">Николай Тарасов</h3>
+                <p class="staff-p">Marketing</p>
+              </div>
             </li>
             <li class="li-staff outline-staff img">
               <img
@@ -172,8 +182,10 @@
                 alt="Фотография Михаила Ермакова UI Designer."
                 width="270"
               />
-              <h3 class="staff-title">Михаил Ермаков</h3>
-              <h4>UI Designer</h4>
+              <div class="staff-pr max-width">
+                <h3 class="staff-title">Михаил Ермаков</h3>
+                <p class="staff-p">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -182,7 +194,7 @@
 
     <!-- Подвал страницы -->
     <footer>
-      <div class="container">
+      <div class="container cont">
         <!--*розташування дає різницю*/-->
         <!-- Логотип, всегда ссылка -->
         <!--href="./index.html" lang="en" class="logo"-->

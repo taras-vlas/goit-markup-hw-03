@@ -20,48 +20,48 @@
 
   <!-- Контент страницы portfolio-->
 
-  <body class="page">
-    <!-- Шапка страницы портфолио-->
+  <body>
+    <!-- Шапка страницы -->
     <div class="container">
       <header>
         <!-- site-nav - Главная навигация -->
-        <nav class="parents-btn">
+        <nav>
           <!-- logo Логотип, всегда ссылка -->
-          <a href="../index.html" lang="en" class="logo"
-            >Web<span class="logo-black">Studio</span>
-          </a>
+          <a href="./" lang="en" class="logo"
+            >Web<span class="logo-black">Studio</span></a
+          >
           <!-- site-nav - Ссылки на другие страницы или разделы текущей -->
-          <ul class="site-nav list middle-topline">
+          <ul class="list site-nav">
             <li class="li-site-nav">
-              <a href="../index.html" class="link current">Студия</a>
-            </li>
-            <li class="li-site-nav">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a class="link current" href="../index.html">Студия</a>
             </li>
             <li class="li-site-nav">
-              <a href="./portfolio.html" class="link">Контакты</a>
+              <a class="link" href="../html/portfolio.html">Портфолио</a>
             </li>
-          </ul>
-
-          <!-- aus-nav, Contats -->
-          <ul class="aus-nav list edge-topline">
-            <li class="li-aus-nav">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="li-aus-nav">
-              <a href="tel:+380961111111" class="link">+38 (096) 111-11-11</a>
+            <li class="li-site-nav">
+              <a class="link" href="../">Контакты</a>
             </li>
           </ul>
         </nav>
+
+        <!-- aus-nav, Contats -->
+        <ul class="list aus-nav">
+          <li class="li-aus-nav">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="li-aus-nav">
+            <a class="link" href="tel:+380961111111">+38 (096) 111-11-11</a>
+          </li>
+        </ul>
       </header>
     </div>
 
     <main>
       <!-- навигация портфолио-->
-      <div class="container">
-        <nav>
+      <div class="general">
+        <div class="container">
           <ul class="filter-btn list topline">
             <li class="describe-btn">
               <button type="button">Все</button>
@@ -79,17 +79,16 @@
               <button type="button">Маркетинг</button>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
 
-      <!-- main - Секция главная -->
-      <div class="container">
-        <section class="section-dcrtn">
-          <!--  <h1> ПОРТФОЛИО </h1>      -->
-          <ul class="list ul-dcrtn">
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+        <!-- main - Секция главная -->
+        <div class="container">
+          <section class="section-dcrtn max-width">
+            <!--  <h1> ПОРТФОЛИО </h1>      -->
+            <ul class="list ul-dcrtn">
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-001.jpg"
@@ -99,19 +98,16 @@
                   <h2 class="name-work">Технокряк</h2>
                   <p class="type-work">Веб-сайт</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-002.jpg"
@@ -121,19 +117,16 @@
                   <h2 class="name-work">Постер New Orlean vs Golden Star</h2>
                   <p class="type-work">Дизайн</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-003.jpg"
@@ -143,19 +136,17 @@
                   <h2 class="name-work">Ресторан Seafood</h2>
                   <p class="type-work">Приложение</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-004.jpg"
@@ -165,19 +156,16 @@
                   <h2 class="name-work">Проект Prime</h2>
                   <p class="type-work">Маркетинг</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                       </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-005.jpg"
@@ -187,19 +175,16 @@
                   <h2 class="name-work">Проект Boxes</h2>
                   <p class="type-work">Приложение</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-006.jpg"
@@ -209,19 +194,16 @@
                   <h2 class="name-work">Inspiration has no Borders</h2>
                   <p class="type-work">Веб-сайт</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-007.jpg"
@@ -231,19 +213,16 @@
                   <h2 class="name-work">Издание Limited Edition</h2>
                   <p class="type-work">Дизайн</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-008.jpg"
@@ -253,19 +232,16 @@
                   <h2 class="name-work">Проект LAB</h2>
                   <p class="type-work">Маркетинг</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
-              <!--          <p class="describe-work">
+
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-            <li class="block-li img">
-              <!-- Рамка вокруг текста -->
-              <div class="outline-main">
+              </li>
+              <li class="block-li img outline-main">
+                <!-- Рамка вокруг текста -->
+
                 <a href=""
                   ><img
                     src="../images/portfolio-img/hw-02-009.jpg"
@@ -275,25 +251,22 @@
                   <h2 class="name-work">Growing Business</h2>
                   <p class="type-work">Приложение</p>
                 </a>
-              </div>
-              <div>
-                <p class="plastyr"></p>
-              </div>
 
-              <!--          <p class="describe-work">
+                <!--          <p class="describe-work">
                       Технокряк это современная площадка распространения коронавируса.
                       Компании используют эту платформу для цифрового шпионажа и атак
                       на защищенные сервера конкурентов.
                     </p> -->
-            </li>
-          </ul>
-        </section>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
 
     <!-- Подвал страницы -->
     <footer>
-      <div class="container">
+      <div class="container cont">
         <!--*розташування дає різницю*/-->
         <!-- Логотип, всегда ссылка -->
         <!--href="./index.html" lang="en" class="logo"-->

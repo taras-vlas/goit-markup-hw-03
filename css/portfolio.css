@@ -5,6 +5,17 @@
   background-color: #ffffff;
   color: #212121;} --*/
 /* button - Системи кнопок M.2,Веб.З: 2.09.40 */
+.general {
+ /*  padding-top: 0px;
+ /*padding-bottom: 30px;*/
+  margin-top: 94px;
+  /*outline: 2px solid tomato; /* слой */
+  /*border: 2px none; var(--button-bckgr-color); /* Убираем границу */
+    
+  /*border: 2px solid var(--button-bckgr-color);*/
+  background-color: var(--primary-white-color);
+ }
+
 .filter-btn {
   display: flex;
   margin-top: 0;
@@ -14,9 +25,11 @@
   /* background-color: orchid; / завжди використовуватити в роботі з container*/
 }
 .topline {
+
   /*вертикаль */
-  padding-top: 94px;
+  padding-top: 0px;
   padding-bottom: 50px;
+  
 }
 .describe-btn button {
   border-radius: 4px;
@@ -71,7 +84,8 @@ border: 1px solid black; */
   /* max-lines: ; */
   /* background-color: teal;*/
   align-items: center;
-  padding-bottom: 64px; /* 94pх -30рх (plastyr) = 64рх */
+  padding-bottom: 0px; 
+  margin-bottom: 94px; 
   max-lines: ;
   block-size: 0%;
 }
@@ -88,12 +102,17 @@ border: 1px solid black; */
 /* структурні псевдокласи */
 .block-li:nth-child(3n) {
   margin-right: 0px; 
-  /* зносимо правий margin у 4-го елемента */
+  /* зносимо правий margin у 3-го елемента */
 }
-
 .block-lu:nth-child(-n ) {
-  margin-bottom: 30px; } /* зносимо нижні margin у 4-х останніх елементів */
+  margin-bottom: 0px; } /* зносимо нижні margin у 3-х останніх елементів */
 
+/*.block-li {
+ margin-bottom: 30px; 
+}*/
+.block-li:not(:nth-last-child(-n +3 )) { 
+ margin-bottom: 30px; 
+}/* зносимо нижні margin у 3-х останніх елементів */
 
 /* структурні псевдокласи */
 /*.block-li:nth-child(3n) {
@@ -128,6 +147,12 @@ border: 1px solid black; */
 a {text-decoration: none;
 }
 
+.max-width {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+ /* min-width: 30px;*/
+}
 
 .name-work {
   margin: 0;
@@ -150,20 +175,20 @@ a {text-decoration: none;
   margin-bottom: 30px;
   color: var(--title-text-color);
   
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87; /* identical to box height, or 187% */
   letter-spacing: 0.03em;
 }
-.plastyr {
-  margin: 0;
+/*.plastyr {
+  margin: 0; 
+  background-color: var(--primary-white-color);
+  padding-bottom: 30px;}*/
   /*outline: 2px solid tomato; /* слой */
   /*border: 2px none; var(--button-bckgr-color); /* Убираем границу */
     
   /*border: 2px solid var(--button-bckgr-color);*/
-  background-color: var(--primary-white-color);
-  padding-bottom: 30px;
+ 
 /*
 .describe-work {
   color: var(--title-text-color);
@@ -171,7 +196,7 @@ a {text-decoration: none;
   font-size: 14px;
   line-height: 1.71; 
   letter-spacing: 0.03em;
-}
+
 */
 
 /* filter nav 

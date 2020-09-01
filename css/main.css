@@ -71,12 +71,10 @@ section {
 
 /* section advantage */
 .advntg {
-  padding-top: 94px;
-}
+  padding-top: 94px;}
 .advantage-title {
   margin-top: 0;
   margin-bottom: 0;
-  /*  padding-top: 94px;*/
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -89,9 +87,9 @@ section {
 }
 
 p {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 0;
-  padding-top: 10px;
+ 
   color: var(--title-text-color);
 
   font-weight: 400;
@@ -106,6 +104,7 @@ p {
   /* justify-content: center;  /створює проблему пустого місця*/
   /* max-lines: ; */
   /* background-color: teal;*/
+  padding-top: 0;
 }
 .ul-advantage .li-advantage {
   /* width: 270px;*/
@@ -139,9 +138,8 @@ padding-bottom: 94;
 /* section work */
 .section-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 0;
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -161,18 +159,16 @@ padding-bottom: 94;
 .section-work {
  /* outline: 2px solid tomato;  */
   /*border: 1px transparent var(--button-bckgr-color); /* рамка */
-  margin-top: 0;
-  margin-bottom: 94px;
-  
-  
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
  /* float: left; */
-     
 }
 .lu-work {
   display: flex; /*багатострочний flex контейнер для ul*/
   flex-wrap: wrap; /*перенос li-елементів строки*/
  /* background-color: yellow; */
-
+  
 }
 
 .lu-work .li-work {
@@ -180,8 +176,7 @@ padding-bottom: 94;
 /* width: calc(100% - (3 * 30px))/3; /* HE ПРАЦЮЮТЬ*/
   margin-right: 30px;
   margin-bottom: 30px;
-  
-}
+  }
 /* структурні псевдокласи */
 .lu-work .li-work:nth-child(3n) {
   margin-right: 0px; /* зносимо правий margin у 3-го елемента */
@@ -196,6 +191,7 @@ padding-bottom: 94;
 /* Заголовки + padding */
 
 .section-staff {
+  padding-top: 94px;
   margin-top: 0;
   margin-bottom: 0;
   background-color: var(--button-bckgr-color); */
@@ -235,25 +231,32 @@ padding-bottom: 94;
 .lu-staff .li-staff:nth-last-child(-n + 4) {
   margin-bottom: 0px; /* зносимо нижні margin у 4-х останніх елементів */
 }
-
+.max-width {
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+ /* min-width: 30px;*/
+}
+.staff-pr{
+  padding-top: 30px ;
+  padding-bottom: 30px;
+}
 
 .staff-title {
   margin-bottom: 0px;
-  margin-top: 30px;
+  margin-top: 0px;
   text-align: center;
   color: var(--primary-text-color);
- 
- 
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-h4 {
+.staff-p {
   margin-top: 10px;
   margin-bottom: 0px;
-   padding-bottom: 30px;
   text-align: center; /*від цього елемента унаслідує  */
   color: var(--title-text-color);
 

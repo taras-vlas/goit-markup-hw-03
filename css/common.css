@@ -32,7 +32,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
- /* outline: 2px solid tomato; /* слой */
+  outline: 2px solid tomato; /* слой */
   /* background-color: #fffbbb; / завжди використовуватити в роботі з container*/
 }
 
@@ -45,6 +45,15 @@ img {
   height: auto;
 }
 
+header { 
+  display:flex;
+  height: 80px;
+  padding-top: 32px; /*вертикаль +*/
+  padding-bottom: 32px;  /*+ вертикаль*/
+  align-items: center;
+
+}
+
 .list {
   padding: 0; /* або пройтись через ліву крайню кнопку в F12 */
   margin: 0; /* або пройтись через ліву крайню кнопку в F12 */
@@ -54,27 +63,10 @@ img {
   list-style: none; 
 }
 
-.header-nav {
-  display: inline-block; /*щоб розвернути в горизонталь і запрацювали  padding горизонталі */
-  padding-left: 15px;
-  padding-right: 15px;
-
-  text-align: center;
-  border-style: solid;
-/*  color: orange; */
-}
-
-.parents-btn {
-  display: flex;
-
-  align-items: center;
-  justify-content: ;
-}
 /* logo */
 .logo {
-      margin-right: 93px;
+  display: flex;
   color: var(--accent-color);
-
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
@@ -83,35 +75,33 @@ img {
   text-decoration: none; /*праює тільки зі ссилками*/
 }
 .logo-black {
-  color: var(--secondary-blacK-color);
+ display: flex;
+ margin-right: 93px;
+ color: var(--secondary-blacK-color);
 }
 
 
 /*{ display: inline-block; /Превращает любой элемент в строчный, простой  текст */
 
-/* Site-nav  */
+/**** Site-nav  */
+nav,
 .site-nav,
 .aus-nav {
+  /*display: block;*/
   display: flex;
   
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.middle-topline { /*вертикаль*/
-  padding-top: 32px; 
-  padding-bottom: 32px; 
-  }
-.edge-topline { /*вертикаль*/
-  margin-left: auto;
-  padding-top: 32px; 
-  padding-bottom: 32px;  
-}
+
 /* очистка крайньої геометрії, 3-й варіант*/
 .site-nav .li-site-nav + .li-site-nav,
 .aus-nav .li-aus-nav + .li-aus-nav {
  margin-left: 50px; 
+ 
 }
 
 /*
@@ -138,17 +128,17 @@ img {
 */
 
 .site-nav .link .current {
-      padding-top: 32px; 
-      padding-bottom: 32px;  
   display: block;  /* зняти зазор перед елементом справа (для inline block - не застосовується)*/
-  
   color: var(--accent-color); /* ввели альтернативний колір на клік*/
+
 }
+  /*** бо .site-nav .link */
 .site-nav a {
-  /*або .site-nav .link */
   color: var(--primary-text-color);
   text-decoration: none; /*праює тільки зі ссилками*/
+
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .aus-nav .link:hover,
@@ -163,9 +153,16 @@ img {
   color: var(--title-text-color);
   text-decoration: none; /*праює тільки зі ссилками*/
 }
+.aus-nav {
+  margin-left: auto;
+}
 
 /* main */
 
+.cont {
+ padding-top: 60px;
+ padding-bottom: 60px;
+}
 /*footer background #2F303A*/
 .adr {
   display: flex;
@@ -180,8 +177,8 @@ footer {
   margin-bottom: 0;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 60px;
-padding-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: var(--secondary-bckgr-color);
   color: var(--primary-white-color);
 }
